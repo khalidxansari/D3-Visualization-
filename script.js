@@ -23,7 +23,7 @@ function draw(filteredData) {
     });
 }
 
- Load London borough data
+// Load London borough data
 d3.csv("london_boroughs_aggregated.csv").then(function(data) {
     allData.london = data.map(function(d) {
         return {
@@ -37,6 +37,7 @@ d3.csv("london_boroughs_aggregated.csv").then(function(data) {
     console.error('Error loading the London aggregated CSV file: ', error);
 });
 
+ 
 
 function updateMap() {
     var currentMonth = new Date().getMonth() + 1;  // Get the current month
