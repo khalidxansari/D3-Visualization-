@@ -13,6 +13,21 @@ document.addEventListener('DOMContentLoaded', function() {
         monthlyCrimes: []
     };
 
+    function updateMap() {
+        // Clear existing markers
+        markers.clearLayers();
+
+        // Assuming you want to display all data collected so far
+        var combinedData = allData.london.concat(allData.monthlyCrimes);
+        combinedData.forEach(function(d) {
+            var marker = L.marker([d.Latitude, d.Longitude]).bindPopup(`Latitude: ${d.Latitude}, Longitude: ${d.Longitude}`);
+            markers.addLayer(marker);
+        });
+
+        // Add the markers to the map
+        map.addLayer(markers);
+    }
+
     d3.csv("london_boroughs_aggregated.csv").then(function(data) {
         allData.london = data.map(d => ({
             ...d,
