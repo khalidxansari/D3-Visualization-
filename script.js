@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
         map.addLayer(markers);
     }
 
-    d3.csv("london_boroughs_aggregated.csv").then(function(data) {
+    d3.csv("london_boroughs_aggregated").then(function(data) {
         allData.london = data.map(d => ({
             ...d,
             Latitude: +d.Latitude,
