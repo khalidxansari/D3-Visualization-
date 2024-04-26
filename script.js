@@ -11,9 +11,9 @@ var allData = {
     monthlyCrimes: []
 };
 
-function draw(filteredData) {
-    // Clear previous markers
-    markers.clearLayers();
+function updateMap() {
+    // ... existing code ...
+} 
 
     // Iterate over each data entry and place a marker
     filteredData.forEach(function(d) {
