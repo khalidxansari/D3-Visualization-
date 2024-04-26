@@ -23,8 +23,8 @@ function draw(filteredData) {
     });
 }
 
-// Load London borough data
-d3.csv("london_boroughs.csv").then(function(data) {
+ Load London borough data
+d3.csv("london_boroughs_aggregated.csv").then(function(data) {
     allData.london = data.map(function(d) {
         return {
             ...d,
@@ -34,7 +34,7 @@ d3.csv("london_boroughs.csv").then(function(data) {
     });
     updateMap(); // Update map after data is loaded
 }).catch(function(error) {
-    console.error('Error loading the London CSV file: ', error);
+    console.error('Error loading the London aggregated CSV file: ', error);
 });
 
 
