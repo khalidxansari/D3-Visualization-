@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
         monthlyCrimes: []
     };
 
+    // Define updateMap function here
     function updateMap() {
         // Clear existing markers
         markers.clearLayers();
@@ -28,14 +29,16 @@ document.addEventListener('DOMContentLoaded', function() {
         map.addLayer(markers);
     }
 
+    // Data loading section
     d3.csv("london_boroughs_aggregated.csv").then(function(data) {
-    allData.london = data.map(d => ({
-        ...d,
-        Latitude: +d.Latitude,
-        Longitude: +d.Longitude
-    }));
-    updateMap(); // Update map after data is loaded
-}).catch(function(error) {
-    console.error('Error loading the London aggregated CSV file: ', error);
-    alert("Failed to load London borough data. Please check your network connection and try again.");
+        allData.london = data.map(d => ({
+            ...d,
+            Latitude: +d.Latitude,
+            Longitude: +d.Longitude
+        }));
+        updateMap(); // Update map after data is loaded
+    }).catch(function(error) {
+        console.error('Error loading the London aggregated CSV file: ', error);
+        alert("Failed to load London borough data. Please check your network connection and try again.");
+    });
 });
