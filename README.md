@@ -12,6 +12,7 @@ How does tourism seasonality correlate with specific crimes like shoplifting?
 Is there a spatial correlation between income, population density, and crime?
 
 👉 Live Map Visualization: https://khalidxansari.github.io/D3-Visualization-/
+
 👉 Tableau Visualisation: https://public.tableau.com/app/profile/khalid.ansari2138/viz/Book2_17178558096280/Dashboard2
 
 💻 Tools & Technologies
