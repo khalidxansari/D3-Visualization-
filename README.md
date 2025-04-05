@@ -1,5 +1,3 @@
-the project, here’s how you can add it clearly and concisely to your GitHub D3-Visualization- repository README:
-
 📊 Project Overview
 The Godfathers – Crime Patterns in Major Cities is a group project focused on visualizing crime data across London, Liverpool, and Newcastle in 2023. The project analyzes spatial and temporal crime patterns, correlating them with population density, tourism, and income levels using official UK datasets.
 
@@ -13,7 +11,7 @@ How does tourism seasonality correlate with specific crimes like shoplifting?
 
 Is there a spatial correlation between income, population density, and crime?
 
-👉 Live Map Visualization
+👉 Live Map Visualization: https://khalidxansari.github.io/D3-Visualization-/
 
 💻 Tools & Technologies
 D3.js — for dynamic data-driven visualizations
